@@ -27,12 +27,6 @@ export default defineConfig({
           // Changed this part
           items: [
             { label: 'API Documentation', link: '/api/' },
-            {
-              label: 'Reference',
-              autogenerate: {
-                directory: 'reference'
-              }
-            }
           ]
         },
         {
