@@ -5,11 +5,9 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "bun run docs:generate && astro build",
+    "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro",
-    "docs:generate": "bun scripts/doc-generator.js"
-
+    "astro": "astro"
   },
   "dependencies": {
     "@astrojs/starlight": "^0.29.2",
