@@ -2,7 +2,7 @@ name: Update API Documentation
 
 on:
   push:
-    branches: [ main ]  # Workflow file should be on main
+    branches: [ master ]  # Workflow file should be on main
   repository_dispatch:  # Add manual trigger capability
     types: [update_api_docs]
   workflow_dispatch:    # Allow manual runs from GitHub UI
@@ -15,7 +15,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: main    # Explicitly checkout main
+          ref: master    # Explicitly checkout main
       
       - name: Update API documentation
         run: |
